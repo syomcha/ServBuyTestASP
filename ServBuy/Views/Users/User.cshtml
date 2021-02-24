@@ -1,0 +1,23 @@
+@model User
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Один юзер</title>
+</head>
+<body>
+<div>
+    <h2>Ваш юзер</h2>
+    @{
+        <div>
+            <p>ID: @Model.id.ToString() Login: @Model.login Password: @Model.password</p>
+        </div>
+    }
+</div>
+</body>
+</html>

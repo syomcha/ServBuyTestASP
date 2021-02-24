@@ -1,0 +1,27 @@
+@using ServBuy.Models
+@model IEnumerable<User>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Все юзеры</title>
+</head>
+<body>
+<div>
+    <h2>Все юзеры Unity C# Asp.Net</h2>
+    @{
+        foreach (var user in Model)
+        {
+            <div>
+                <p>ID: @user.id.ToString() Login: @user.login</p>
+            </div>
+        }
+    }
+</div>
+</body>
+</html>
